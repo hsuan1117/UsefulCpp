@@ -11,18 +11,11 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    double a,b,c;
-    cin >> a >> b >> c;
-    if(a<60)a*=1.25;
-    if(b<60)b*=1.25;
-    if(c<60)c*=1.25;
-
-    if(((a+b+c)/3<0)) || ((a+b+c)/3 > 100)){
-	cout<< "ReCheckScores" << endl;
-    }else if((a+b+c)/3 < 60){
-        cout << "PleaseGoToDieOneDie" << endl;
-    }else{
-        cout << "Hmm" << endl;
+    double d[3];
+    for(int i=0;i<3;i++){
+        cin >> d[i];
     }
+    sort(d,d+3);
+    
     return 0;
 }
