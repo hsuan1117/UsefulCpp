@@ -5,3 +5,6 @@
 #  Copyright © 2020 hsuan. All rights reserved.
 #  Using MIT License
 
+g++ main.cpp -std=c++11 
+echo "------ running ------"
+./a.out
